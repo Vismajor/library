@@ -10,6 +10,16 @@ require_relative 'methods'
 
 library = Library.new name: "CodeClan Library"
 
+library.add_person(Person.new(name:'Fred'))
+library.add_person(Person.new(name:'Wilma'))
+library.add_person(Person.new(name:'Barney'))
+library.add_person(Person.new(name:'Betty'))
+library.add_book(Book.new(title: "The Hobbit", genre: "Fantasy"))
+library.add_book(Book.new(title: "Feersum Endjinn", genre: "Science Fiction"))
+library.add_book(Book.new(title: "Histories", genre: "History"))
+library.add_book(Book.new(title: "To Kill a Mockingbird", genre: "Fiction"))
+library.add_book(Book.new(title: "A Brief History of Time", genre: "Non-Fiction"))
+
 response = menu
 
 until response == 0
@@ -18,15 +28,15 @@ until response == 0
   when 1
     create_book(library)
   when 2
-    # TODO: create_person
+    create_person(library)
   when 3
-    # TODO: list all books
+    list_books(library)
   when 4
-    # TODO: list all people
+    list_people(library)
   when 5
-    # TODO: Lend book
+    lend_book(library)
   when 6
-    # TODO: return book
+    return_book(person)
   when 7
     # TODO: List of borrowed books
   else 

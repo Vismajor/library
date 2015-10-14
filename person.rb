@@ -6,4 +6,24 @@ def initialize(options={})
   @books = {}
 end
 
+def borrow(book)
+  books[book.title] = book
+end
+
+def return(person_name, book_title)
+  person = person_name
+  book = books.delete(book_title)
+
+  library.receive(book)
+end
+
+
+def pretty_string
+  if books.size == 1
+  "'#{name}' has #{books.size} book borrowed from the library."
+  else
+  "'#{name}' has #{books.size} books borrowed from the library."
+  end
+end
+
 end

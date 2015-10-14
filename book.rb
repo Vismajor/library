@@ -7,5 +7,9 @@ def initialize(options={})
   @genre = options[:genre]
 end
 
+def pretty_string
+  "#{title} #{genre}"
+end
+
 
 end
