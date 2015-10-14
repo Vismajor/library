@@ -43,7 +43,7 @@ def lend_book(library)
 
 end
 
-def return_book(person)
+def return_book(library)
  puts library.list_people
  puts
  print "Which person wants to return a book?"
@@ -54,7 +54,7 @@ def return_book(person)
  puts #book_people
  book_title = gets.chomp
 
- person.return(person_name, book_title)
+ library.receive(person_name, book_title)
 
 end
 

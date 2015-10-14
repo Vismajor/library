@@ -36,7 +36,7 @@ until response == 0
   when 5
     lend_book(library)
   when 6
-    return_book(person)
+    return_book(library)
   when 7
     # TODO: List of borrowed books
   else 

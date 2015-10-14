@@ -15,8 +15,12 @@ def lend(person_name, book_title)
   person.borrow(book)
 end
 
-def receive(book)
-  books[book.title] = book
+
+
+def receive(person_name, book_title)
+  person = people[person_name]
+  books
+  person.giveback(book_title)
 end
 
 

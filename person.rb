@@ -10,12 +10,10 @@ def borrow(book)
   books[book.title] = book
 end
 
-def return(person_name, book_title)
-  person = person_name
-  book = books.delete(book_title)
-
-  library.receive(book)
+def giveback(book_title)
+  books.delete(book_title)
 end
+
 
 
 def pretty_string
