@@ -19,9 +19,9 @@ end
 
 def return(person_name, book_title)
   person = people[person_name]
+  book = person.return(book_title)
 
-  
-  person.giveback(book_title)
+  add_book(book)
 end
 
 def receive(book)

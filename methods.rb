@@ -48,6 +48,7 @@ def return_book(library)
  puts
  print "Which person wants to return a book?"
  person_name = gets.chomp
+ person = library.people[person_name]
 
  puts
  puts "Which book does the person want to return?"
