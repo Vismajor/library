@@ -11,7 +11,10 @@ def borrow(book)
 end
 
 def giveback(book_title)
+  book = books[book_title]
   books.delete(book_title)
+
+  
 end
 
 

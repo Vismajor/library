@@ -54,7 +54,8 @@ def return_book(library)
  puts #book_people
  book_title = gets.chomp
 
- library.receive(person_name, book_title)
+
+ library.return(person_name, book_title)
 
 end
 

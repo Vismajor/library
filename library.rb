@@ -17,10 +17,15 @@ end
 
 
 
-def receive(person_name, book_title)
+def return(person_name, book_title)
   person = people[person_name]
-  books
+
+  
   person.giveback(book_title)
+end
+
+def receive(book)
+  books[book]
 end
 
 
